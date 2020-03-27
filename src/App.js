@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Layout from './components/Layout/Layout';
 
-function App() {
+export default () => {
   return (
     <div className="App">
-      Sushi Builder by Elaman Imashov
+      <Layout>
+        Sushi Builder by Elaman Imashov
+      </Layout>
     </div>
   );
-}
-
-export default App;
+};
