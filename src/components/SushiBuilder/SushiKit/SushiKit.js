@@ -4,71 +4,17 @@ import classes from './SushiKit.module.css';
 
 export default () => (
   <div className={classes.SushiKit}>
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
-    <Sushi />
+    <Sushi type="maki" />
+    <Sushi type="salmon-roll" />
+    <Sushi type="tuna-roll" />
+    <Sushi type="tuna-roll" />
+    <Sushi type="salmon-roll" />
+    <Sushi type="tuna-roll" />
+    <Sushi type="salmon-roll" />
+    <Sushi type="tuna-roll" />
+    <Sushi type="maki" />
+    <Sushi type="tuna-roll" />
+    <Sushi type="maki" />
+    <Sushi type="tuna-roll" />
   </div>
 );
