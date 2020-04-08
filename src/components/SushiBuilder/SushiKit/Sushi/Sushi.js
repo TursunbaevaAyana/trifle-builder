@@ -5,11 +5,11 @@ export default ({ type }) => {
   const sushiClasses = [classes.Sushi];
 
   switch (type) {
-    case 'salmon-roll':
+    case 'salmonRoll':
       sushiClasses.push(classes.salmonRoll);
       break;
 
-    case 'tuna-roll':
+    case 'tunaRoll':
       sushiClasses.push(classes.tunaRoll);
       break;
 
