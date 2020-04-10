@@ -1,6 +1,26 @@
 .SushiControl {
-  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
 }
 .SushiControl .label {
   color: white;
+  font-family: 'Nanum Brush Script', cursive;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+.SushiControl button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: white;
+  color: #EC6F31;
+  font-weight: bold;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.SushiControl button:disabled {
+  opacity: .5;
+}
+.SushiControl button:not(:disabled):hover {
+  opacity: .8;
 }
