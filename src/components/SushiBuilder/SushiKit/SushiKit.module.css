@@ -1,15 +1,14 @@
 .SushiKit .bento {
-  border: 3px solid gray;
+  padding: 1rem;
+  padding-top: 2rem;
+  
   background-color: lightgray;
-  width: 400px;
+  width: 392px;
   height: 300px;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
 
   display: flex;
   flex-flow: row wrap;
   align-content: flex-start;
-  justify-content: space-evenly;
 
   overflow: hidden;
 }

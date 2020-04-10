@@ -1,23 +1,26 @@
 .Sushi {
-  width: 50px;
+  width: 40px;
   height: 50px;
   box-sizing: border-box;
+  margin-top: -20px;
 
-  margin-right: .5rem;
-  margin-bottom: .5rem;
+  background-repeat: no-repeat;
 }
-.salmonRoll {
-  border-radius: 100%;
-  border: 15px solid rgb(230, 159, 29);
-  background-color: white;
+.avocadoMaki {
+  background-image: url(../../../../assets/avocadoMaki.svg);
 }
-.tunaRoll {
-  border-radius: 20%;
-  border: 15px solid tomato;
-  background-color: white;
+.avocadoTunaRoll {
+  background-image: url(../../../../assets/avocadoTunaRoll.svg);
 }
-.maki {
-  border-radius: 100%;
-  border: 1px solid rgb(12, 50, 12);
-  background-color: white;
+.californiaMaki {
+  background-image: url(../../../../assets/californiaMaki.svg);
+}
+.californiaTunaRoll {
+  background-image: url(../../../../assets/californiaTunaRoll.svg);
+}
+.ikuraMaki {
+  background-image: url(../../../../assets/ikuraMaki.svg);
+}
+.salmonMaki {
+  background-image: url(../../../../assets/salmonMaki.svg);
 }
