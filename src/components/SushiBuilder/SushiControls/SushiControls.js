@@ -3,9 +3,12 @@ import classes from "./SushiControls.module.css";
 import SushiControl from "./SushiControl/SushiControl";
 
 const CONTROLS = [
-  { label: "Tuna Roll", type: "tunaRoll" },
-  { label: "Salmon Roll", type: "salmonRoll" },
-  { label: "Maki", type: "maki" },
+  { label: "Avocado Maki", type: "avocadoMaki" },
+  { label: "Avocado Tuna Roll", type: "avocadoTunaRoll" },
+  { label: "California Maki", type: "californiaMaki" },
+  { label: "California Tuna Roll", type: "californiaTunaRoll" },
+  { label: "Ikura Maki", type: "ikuraMaki" },
+  { label: "Salmon Maki", type: "salmonMaki" },
 ];
 
 export default ({ ingredients, addIngredient, removeIngredient }) => {

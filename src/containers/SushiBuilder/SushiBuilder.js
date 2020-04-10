@@ -4,16 +4,22 @@ import classes from "./SushiBuilder.module.css";
 import SushiControls from "../../components/SushiBuilder/SushiControls/SushiControls";
 
 const PRICES = {
-  salmonRoll: 8,
-  tunaRoll: 6,
-  maki: 5,
+  avocadoMaki: 7,
+  avocadoTunaRoll: 10,
+  californiaMaki: 8,
+  californiaTunaRoll: 11,
+  ikuraMaki: 15,
+  salmonMaki: 12,
 };
 
 export default () => {
   const [ingredients, setIngredients] = useState({
-    salmonRoll: 0,
-    tunaRoll: 0,
-    maki: 0,
+    avocadoMaki: 0,
+    avocadoTunaRoll: 0,
+    californiaMaki: 0,
+    californiaTunaRoll: 0,
+    ikuraMaki: 0,
+    salmonMaki: 0,
   });
   const [price, setPrice] = useState(100);
 
