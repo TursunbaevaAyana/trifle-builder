@@ -14,6 +14,7 @@ const CONTROLS = [
 export default ({ ingredients, addIngredient, removeIngredient }) => {
   const controlsOutput = CONTROLS.map((control) => (
     <SushiControl
+      key={control.type}
       control={control}
       addIngredient={addIngredient}
       removeIngredient={removeIngredient}
