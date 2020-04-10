@@ -6,18 +6,31 @@ import SushiControls from "../../components/SushiBuilder/SushiControls/SushiCont
 export default () => {
   const [ingredients, setIngredients] = useState({
     salmonRoll: 3,
-    tunaRoll: 12,
+    tunaRoll: 4,
     maki: 5,
   });
 
-  function addIngredient() {
+  function addIngredient(type) {
+    const newIngredients = { ...ingredients };
+    newIngredients[type]++;
+    setIngredients(newIngredients);
+  }
 
+  function removeIngredient(type) {
+    if (ingredients[type] >= 1) {
+      const newIngredients = { ...ingredients };
+      newIngredients[type]--;
+      setIngredients(newIngredients);
+    }
   }
 
   return (
     <div className={classes.SushiBuilder}>
       <SushiKit ingredients={ingredients} />
-      <SushiControls />
+      <SushiControls
+        addIngredient={addIngredient}
+        removeIngredient={removeIngredient}
+      />
     </div>
   );
 };

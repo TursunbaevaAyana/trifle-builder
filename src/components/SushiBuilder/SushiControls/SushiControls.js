@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./SushiControls.module.css";
 import SushiControl from "./SushiControl/SushiControl";
 
-export default () => {
+export default ({ addIngredient, removeIngredient }) => {
   const controls = [
     { label: "Tuna Roll", type: "tunaRoll" },
     { label: "Salmon Roll", type: "salmonRoll" },
@@ -10,12 +10,12 @@ export default () => {
   ];
 
   const controlsOutput = controls.map((control) => (
-    <SushiControl label={control.label} />
+    <SushiControl
+      control={control}
+      addIngredient={addIngredient}
+      removeIngredient={removeIngredient}
+    />
   ));
 
-  return (
-    <div className={classes.SushiControls}>
-      {controlsOutput}
-    </div>
-  );
+  return <div className={classes.SushiControls}>{controlsOutput}</div>;
 };
