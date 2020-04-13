@@ -9,7 +9,7 @@ const PRICES = {
   californiaMaki: 8,
   californiaTunaRoll: 11,
   ikuraMaki: 15,
-  salmonMaki: 12,
+  salmonMaki: 10,
 };
 
 export default () => {
