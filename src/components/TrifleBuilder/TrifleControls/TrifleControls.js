@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./SushiControls.module.css";
-import SushiControl from "./SushiControl/SushiControl";
+import classes from "./TrifleControls.module.css";
+import TrifleControl from "./TrifleControl/TrifleControl";
 
 const CONTROLS = [
   { label: "Avocado Maki", type: "avocadoMaki" },
@@ -13,7 +13,7 @@ const CONTROLS = [
 
 export default ({ ingredients, addIngredient, removeIngredient }) => {
   const controlsOutput = CONTROLS.map((control) => (
-    <SushiControl
+    <TrifleControl
       key={control.type}
       control={control}
       addIngredient={addIngredient}
@@ -22,5 +22,5 @@ export default ({ ingredients, addIngredient, removeIngredient }) => {
     />
   ));
 
-  return <div className={classes.SushiControls}>{controlsOutput}</div>;
+  return <div className={classes.TrifleControls}>{controlsOutput}</div>;
 };

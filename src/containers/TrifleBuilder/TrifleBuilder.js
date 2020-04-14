@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SushiKit from "../../components/SushiBuilder/SushiKit/SushiKit";
-import classes from "./SushiBuilder.module.css";
-import SushiControls from "../../components/SushiBuilder/SushiControls/SushiControls";
+import TrifleKit from "../../components/TrifleBuilder/TrifleKit/TrifleKit";
+import classes from "./TrifleBuilder.module.css";
+import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
 
 const PRICES = {
   avocadoMaki: 7,
@@ -21,7 +21,7 @@ export default () => {
     ikuraMaki: 0,
     salmonMaki: 0,
   });
-  const [price, setPrice] = useState(100);
+  const [price, setPrice] = useState(50);
 
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
@@ -44,9 +44,9 @@ export default () => {
   }
 
   return (
-    <div className={classes.SushiBuilder}>
-      <SushiKit price={price} ingredients={ingredients} />
-      <SushiControls
+    <div className={classes.TrifleBuilder}>
+      <TrifleKit price={price} ingredients={ingredients} />
+      <TrifleControls
         ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}

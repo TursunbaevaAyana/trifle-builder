@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./SushiControl.module.css";
+import classes from "./TrifleControl.module.css";
 
 export default ({ control, removeIngredient, addIngredient, disabled }) => (
   <div className={classes.SushiControl}>

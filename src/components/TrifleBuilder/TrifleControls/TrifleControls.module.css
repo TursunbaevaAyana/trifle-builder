@@ -1,7 +1,8 @@
-.SushiControls {
-  border: 3px solid #D35A25;
-  background-color: #EC6F31;
-  width: 300px;
+.TrifleControls {
+  border: 3px solid gray;
+  background-color: black;
+  width: 400px;
+  height: 400px;
   padding-top: .5rem;
   padding-left: .5rem;
 

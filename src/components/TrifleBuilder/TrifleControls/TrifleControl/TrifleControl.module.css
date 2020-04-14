@@ -3,8 +3,8 @@
   align-items: center;
 }
 .SushiControl .label {
-  color: white;
-  font-family: 'Nanum Brush Script', cursive;
+  color: white; 
+  font-family: 'Lexend Giga', sans-serif;
   font-size: 1.5rem;
   padding: .5rem;
 }
@@ -13,7 +13,7 @@
   height: 20px;
   border: none;
   background-color: white;
-  color: #EC6F31;
+  color: black;
   font-weight: bold;
   border-radius: 100%;
   cursor: pointer;
