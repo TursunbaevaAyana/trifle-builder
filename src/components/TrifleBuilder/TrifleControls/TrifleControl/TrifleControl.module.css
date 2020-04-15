@@ -1,14 +1,14 @@
-.SushiControl {
+.TrifleControl {
   display: flex;
   align-items: center;
 }
-.SushiControl .label {
+.TrifleControl .label {
   color: white; 
   font-family: 'Lexend Giga', sans-serif;
   font-size: 1.5rem;
   padding: .5rem;
 }
-.SushiControl button {
+.TrifleControl button {
   width: 20px;
   height: 20px;
   border: none;
@@ -18,9 +18,9 @@
   border-radius: 100%;
   cursor: pointer;
 }
-.SushiControl button:disabled {
+.TrifleControl button:disabled {
   opacity: .5;
 }
-.SushiControl button:not(:disabled):hover {
+.TrifleControl button:not(:disabled):hover {
   opacity: .8;
 }

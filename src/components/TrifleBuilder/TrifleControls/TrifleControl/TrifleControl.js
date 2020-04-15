@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./TrifleControl.module.css";
 
 export default ({ control, removeIngredient, addIngredient, disabled }) => (
-  <div className={classes.SushiControl}>
+  <div className={classes.TrifleControl}>
     <button
       className={classes.less}
       onClick={() => removeIngredient(control.type)}

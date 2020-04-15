@@ -3,12 +3,13 @@ import classes from "./TrifleControls.module.css";
 import TrifleControl from "./TrifleControl/TrifleControl";
 
 const CONTROLS = [
-  { label: "Avocado Maki", type: "avocadoMaki" },
-  { label: "Avocado Tuna Roll", type: "avocadoTunaRoll" },
-  { label: "California Maki", type: "californiaMaki" },
-  { label: "California Tuna Roll", type: "californiaTunaRoll" },
-  { label: "Ikura Maki", type: "ikuraMaki" },
-  { label: "Salmon Maki", type: "salmonMaki" },
+  { label: "Banana", type: "banana" },
+  { label: "Biscuit", type: "biscuit" },
+  { label: "Red-Velvet", type: "redVelvet" },
+  { label: "Chocolate Biscuit", type: "chocolateBiscuit" },
+  { label: "Strawberry", type: "strawberry" },
+  { label: "Ice-Cream", type: "iceCream" },
+  { label: "Kiwi", type: "kiwi" },
 ];
 
 export default ({ ingredients, addIngredient, removeIngredient }) => {
