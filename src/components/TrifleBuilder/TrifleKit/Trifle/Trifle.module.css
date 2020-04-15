@@ -6,20 +6,30 @@
 
   background-repeat: no-repeat;
 }
-.avocadoMaki {
-  background-image: url(../../../../assets/avocadoMaki.svg);
+.banana {
+  background-color: chocolate;
+  width: 200px;
+  height: 10px;
 }
-.avocadoTunaRoll {
-  background-image: url(../../../../assets/avocadoTunaRoll.svg);
+.biscuit { 
+  background-color: darkgoldenrod;
+  width: 250px;
+  height: 20px;
 }
-.californiaMaki {
-  background-image: url(../../../../assets/californiaMaki.svg);
+.redVelvet {
+  background-color: darkred;
+  width: 250px;
+  height: 20px;
 }
-.californiaTunaRoll {
-  background-image: url(../../../../assets/californiaTunaRoll.svg);
+.chocolateBiscuit { 
+  background-color: black;
+  width: 250px;
+  height: 20px;
 }
-.ikuraMaki {
-  background-image: url(../../../../assets/ikuraMaki.svg);
+.iceCream { 
+  background-color: gray;
+  width: 250px;
+  height: 20px;
 }
 .salmonMaki {
   background-image: url(../../../../assets/salmonMaki.svg);

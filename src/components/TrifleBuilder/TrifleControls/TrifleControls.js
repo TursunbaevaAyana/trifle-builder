@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./TrifleControls.module.css";
-import TrifleControl from "./TrifleControl/TrifleControl";
+import TrifleControl from "./TrifleControl/TrifleControl"; 
 
 const CONTROLS = [
   { label: "Banana", type: "banana" },

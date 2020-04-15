@@ -4,22 +4,24 @@ import classes from "./TrifleBuilder.module.css";
 import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
 
 const PRICES = {
-  avocadoMaki: 7,
-  avocadoTunaRoll: 10,
-  californiaMaki: 8,
-  californiaTunaRoll: 11,
-  ikuraMaki: 15,
-  salmonMaki: 10,
+  banana: 2,
+  biscuit: 10,
+  redVelvet: 15,
+  chocolateBiscuit: 12,
+  strawberry: 3,
+  iceCream: 7,
+  kiwi: 2,
 };
 
 export default () => {
   const [ingredients, setIngredients] = useState({
-    avocadoMaki: 0,
-    avocadoTunaRoll: 0,
-    californiaMaki: 0,
-    californiaTunaRoll: 0,
-    ikuraMaki: 0,
-    salmonMaki: 0,
+    banana: 0,
+    biscuit: 0,
+    redVelvet: 0,
+    chocolateBiscuit: 0,
+    strawberry: 0,
+    iceCream: 0,
+    kiwi: 0,
   });
   const [price, setPrice] = useState(50);
 
