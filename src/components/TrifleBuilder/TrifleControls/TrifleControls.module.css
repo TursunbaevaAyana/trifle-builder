@@ -1,11 +1,11 @@
 .TrifleControls {
-  border: 3px solid gray;
-  background-color: black;
-  width: 400px; 
-  padding-top: .5rem;
-  padding-left: .5rem;
-
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
+    border: 3px solid gray;
+    background-color: black;
+    width: 300px;
+    padding-top: .5rem;
+    padding-left: .5rem;
+  
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }

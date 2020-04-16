@@ -3,6 +3,6 @@ import classes from './Logo.module.css';
 
 export default () => (
   <div className={classes.Logo}> 
-    <span>Sushi Builder</span>
+    <span>Trifle Builder</span>
   </div>
 );
