@@ -6,3 +6,18 @@
 
   background-repeat: no-repeat;
 } 
+.banana {
+  background-image: url(../../../../assets/banana.png);
+} 
+.redVelvet{
+  background-image: url(../../../../assets/redVelvet.png);
+} 
+.strawberry {
+  background-image: url(../../../../assets/strawberry.png);
+} 
+.iceCream {
+  background-image: url(../../../../assets/iceCream.png);
+} 
+.chocolateBiscuit{
+  background-image: url(../../../../assets/chocolateBiscuit.png);
+}
