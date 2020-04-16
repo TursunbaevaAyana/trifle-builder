@@ -5,32 +5,4 @@
   margin-top: -20px;
 
   background-repeat: no-repeat;
-}
-.banana {
-  background-color: chocolate;
-  width: 200px;
-  height: 10px;
-}
-.biscuit { 
-  background-color: darkgoldenrod;
-  width: 250px;
-  height: 20px;
-}
-.redVelvet {
-  background-color: darkred;
-  width: 250px;
-  height: 20px;
-}
-.chocolateBiscuit { 
-  background-color: black;
-  width: 250px;
-  height: 20px;
-}
-.iceCream { 
-  background-color: gray;
-  width: 250px;
-  height: 20px;
-}
-.salmonMaki {
-  background-image: url(../../../../assets/salmonMaki.svg);
-}
+} 
