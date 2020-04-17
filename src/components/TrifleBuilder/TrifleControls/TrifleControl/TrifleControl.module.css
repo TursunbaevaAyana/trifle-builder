@@ -3,17 +3,17 @@
   align-items: center;
 }
 .TrifleControl .label {
-  color: white; 
-  font-family: 'Lexend Giga', sans-serif;
+  color: white;
+  font-family: 'Nanum Brush Script', cursive;
   font-size: 1.5rem;
-  padding: .5rem;
+  padding: .4rem 1rem;
 }
 .TrifleControl button {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: white;
-  color: black;
+  color: #EC6F31;
   font-weight: bold;
   border-radius: 100%;
   cursor: pointer;
@@ -23,4 +23,10 @@
 }
 .TrifleControl button:not(:disabled):hover {
   opacity: .8;
+}
+
+@media (min-width: 500px) {
+  .TrifleControl .label {
+    font-size: 2rem;
+  }
 }

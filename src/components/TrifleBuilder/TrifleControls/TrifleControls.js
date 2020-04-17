@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./TrifleControls.module.css";
 import TrifleControl from "./TrifleControl/TrifleControl"; 
+import Button from "../../UI/Button/Button";
 
 const CONTROLS = [
   { label: "Banana", type: "banana" },
@@ -12,7 +13,13 @@ const CONTROLS = [
   { label: "Kiwi", type: "kiwi" },
 ];
 
-export default ({ ingredients, addIngredient, removeIngredient }) => {
+export default ({
+  canOrder,
+  ingredients,
+  addIngredient,
+  removeIngredient,
+  startOrder,
+}) => {
   const controlsOutput = CONTROLS.map((control) => (
     <TrifleControl
       key={control.type}
@@ -23,5 +30,12 @@ export default ({ ingredients, addIngredient, removeIngredient }) => {
     />
   ));
 
-  return <div className={classes.TrifleControls}>{controlsOutput}</div>;
+  return (
+    <div className={classes.TrifleControls}>
+      {controlsOutput}
+      <Button click={startOrder} enabled={canOrder}>
+        Order
+      </Button>
+    </div>
+  );
 };
