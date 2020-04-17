@@ -3,4 +3,13 @@
   justify-content: space-between;
 
   background-color: #8B0000;
+} 
+
+.Toolbar nav {
+  display: none;
+}
+@media (min-width: 500px) {
+  .Toolbar nav {
+    display: block;
+  }
 }
