@@ -1,11 +1,15 @@
 import React from 'react';
 import classes from './Toolbar.module.css';
-import Logo from '../Logo/Logo';
-import Nav from './Nav/Nav';
+import Logo from '../../UI/Logo/Logo';
+import Navigation from '../../UI/Navigation/Navigation';
+import DrawerToggle from '../Drawer/DrawerToggle/DrawerToggle';
 
-export default () =>  (
+export default ({ toggleDrawer }) =>  (
   <div className={classes.Toolbar}>
     <Logo />
-    <Nav />
+    <nav>
+      <Navigation />
+    </nav>
+    <DrawerToggle toggleDrawer={toggleDrawer} />
   </div>
 );
