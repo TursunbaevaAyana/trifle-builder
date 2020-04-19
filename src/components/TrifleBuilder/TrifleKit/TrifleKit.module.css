@@ -1,19 +1,18 @@
 .TrifleKit .bento {
-    padding: 1rem;
-    padding-top: 2rem;
+    padding: 1rem; 
     
     background-color: LightSalmon;
     border: 3px solid #B22222;
-    width: 300px;
+    width: 350px;
     height: 350px;
-  
-    display: flex;
-    flex-flow: row wrap;
-    align-content: flex-start;
+   
+    flex-flow:  column-reverse;
+    align-content: center;
   
     overflow: hidden;
   }
-  .TrifelKit .price {
+  .TrifleKit .price {
     font-size: 2rem;
     font-weight: bold;
+    font-family: FreeMono, monospace;
   } 

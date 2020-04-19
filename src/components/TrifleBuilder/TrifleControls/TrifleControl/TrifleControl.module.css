@@ -3,17 +3,16 @@
   align-items: center;
 }
 .TrifleControl .label {
-  color: white;
-  font-family: 'Nanum Brush Script', cursive;
-  font-size: 1.5rem;
-  padding: .4rem 1rem;
+  color: white;   
+  padding: .4rem 1rem; 
+  font-family: FreeMono, monospace;
 }
 .TrifleControl button {
   width: 30px;
   height: 30px;
   border: none;
   background-color: white;
-  color: #EC6F31;
+  color: #B22222; 
   font-weight: bold;
   border-radius: 100%;
   cursor: pointer;
@@ -27,6 +26,6 @@
 
 @media (min-width: 500px) {
   .TrifleControl .label {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }

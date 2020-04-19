@@ -4,11 +4,11 @@
 }
 .Logo img {
   margin: 5px;
-  height: 55px;
+  height: 58px;
   width: 40px;
 }
 .Logo span { 
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: FreeMono, monospace;
   color: white;
   font-size: 2rem;
 }

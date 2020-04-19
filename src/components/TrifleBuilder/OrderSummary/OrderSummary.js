@@ -3,13 +3,13 @@ import classes from "./OrderSummary.module.css";
 import Button from "../../UI/Button/Button";
 
 const LABELS = { 
-    banana = "Banana", 
-    biscuit = "Biscuit", 
-    redVelvet =  "Red-Velvet", 
-    chocolateBiscuit = "Chocolate Biscuit", 
-    strawberry = "Strawberry", 
-    iceCream = "Ice-Cream",
-    kiwi = "Kiwi",  
+    banana : "Banana", 
+    biscuit : "Biscuit", 
+    redVelvet :  "Red-Velvet", 
+    chocolateBiscuit : "Chocolate Biscuit", 
+    strawberry : "Strawberry", 
+    iceCream : "Ice-Cream",
+    kiwi : "Kiwi",  
 };
 
 export default ({ ingredients, cancelOrder, finishOrder, price }) => {
@@ -24,7 +24,7 @@ export default ({ ingredients, cancelOrder, finishOrder, price }) => {
   return (
     <div className={classes.OrderSummary}>
       <h2>Your order</h2>
-      <p>Congratulations! You've built a best sushi-kit of all times!</p>
+      <p>Congratulations! You've built a best trifle-kit of all times!</p>
       <ul>{ingredientsOutput}</ul>
       <p>Total price: {price.toFixed(2)} som</p>
       <p>Would you like to checkout?</p>

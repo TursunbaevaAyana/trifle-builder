@@ -3,7 +3,7 @@ import React, { useState } from "react";
   import classes from "./TrifleBuilder.module.css";
   import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
   import Modal from "../../components/UI/Modal/Modal";
-  import OrderSummary from "../../components/SushiBuilder/OrderSummary/OrderSummary";
+  import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
   
   const PRICES = { 
     banana: 2,

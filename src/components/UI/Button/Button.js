@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Button.module.css";
 
-export default ({ children, click, enabled, red, green }) => {
+export default ({ children, click, enabled, red, orange }) => {
   const buttonClasses = [classes.Button];
 
   if (red) buttonClasses.push(classes.red);
-  if (green) buttonClasses.push(classes.green);
+  if (orange) buttonClasses.push(classes.orange);
 
   return (
     <button
