@@ -1,14 +1,14 @@
-.Trifle {
-  width: 100%;
+.Trifle { 
   height: 100%; 
   margin-top: -20px;
   background-size: contain;
-  width: 30%;
+  width: 40%;
 
   background-repeat: no-repeat;
 } 
 .banana {
   background-image: url(../../../../assets/banana.png);
+  background-size: 30%;
 } 
 .redVelvet{
   background-image: url(../../../../assets/redVelvet.png);
