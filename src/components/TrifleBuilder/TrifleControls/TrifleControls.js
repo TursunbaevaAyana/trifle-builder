@@ -11,6 +11,8 @@ const CONTROLS = [
   { label: "Strawberry", type: "strawberry" },
   { label: "Ice-Cream", type: "iceCream" },
   { label: "Kiwi", type: "kiwi" },
+  { label: "Strawberry Jam", type: "strawberryJam" },
+  { label: "Blueberries", type:  "blueberries" },
 ];
 
 export default ({

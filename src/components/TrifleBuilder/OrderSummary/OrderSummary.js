@@ -8,8 +8,11 @@ const LABELS = {
     redVelvet :  "Red-Velvet", 
     chocolateBiscuit : "Chocolate Biscuit", 
     strawberry : "Strawberry", 
+    strawberryJam: "Strawberry Jam",
     iceCream : "Ice-Cream",
-    kiwi : "Kiwi",  
+    kiwi : "Kiwi", 
+    blueberries : "Blueberries",
+     
 };
 
 export default ({ ingredients, cancelOrder, finishOrder, price }) => {
