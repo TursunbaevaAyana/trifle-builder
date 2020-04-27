@@ -7,12 +7,8 @@
   background-repeat: no-repeat;
 } 
 .banana {
-  background-image: url(../../../../assets/banana.png);
-  background-size: 30%;
-} 
-.redVelvet{
-  background-image: url(../../../../assets/redVelvet.png);
-} 
+  background-image: url(../../../../assets/banana.png); 
+}  
 .strawberry {
   background-image: url(../../../../assets/strawberry.png);
 } 
@@ -26,5 +22,5 @@
   background-image: url(../../../../assets/biscuit.png);
 }
 .blueberries{
-  background-image: url(../../../../assets/blueberries.png.png);
+  background-image: url(../../../../assets/blueberries.png);
 }

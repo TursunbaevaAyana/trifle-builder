@@ -13,6 +13,8 @@ import React, { useState } from "react";
     strawberry: 3,
     iceCream: 7,
     kiwi: 2,
+    strawberryJam: 5,
+    blueberries: 4,
   };
   
   export default () => {
@@ -24,6 +26,8 @@ import React, { useState } from "react";
       strawberry: 0,
       iceCream: 0,
       kiwi: 0,
+      strawberryJam: 0,
+      blueberries: 0,
     });
     const [price, setPrice] = useState(50);
     const [canOrder, setCanOrder] = useState(false);
