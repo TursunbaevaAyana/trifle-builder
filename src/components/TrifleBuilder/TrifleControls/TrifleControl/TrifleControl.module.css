@@ -1,6 +1,6 @@
 .TrifleControl {
   display: flex;
-  align-items: center;
+  align-items: center; 
 }
 .TrifleControl .label {
   color: white;   
