@@ -1,7 +1,6 @@
 import React from "react";
 import Trifle from "./Trifle/Trifle";
 import classes from "./TrifleKit.module.css"; 
-import glass from '../../../assets/glass.png';
 
 
 export default ({ price, ingredients }) => {
@@ -14,9 +13,14 @@ export default ({ price, ingredients }) => {
   });
 
   return (
-    <div className={classes.TrifleKit}> 
-      <div className={classes.bento}>{ingredientsOutput}<img src={glass} /></div>  
-      <div className={classes.price}> {price} som</div> 
+    <div className={classes.TrifleKit}>
+      <div className={classes.bento}>
+        <div></div>
+        <div> {ingredientsOutput}</div>
+        <div></div>
+
+      </div>
+      <div className={classes.price}> {price} som</div>
     </div>
   );
 };
