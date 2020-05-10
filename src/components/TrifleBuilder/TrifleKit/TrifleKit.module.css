@@ -1,12 +1,11 @@
-.TrifleKit .bento {
-    padding: 1rem; 
-    padding-top: 50px; 
+.TrifleKit .bento { 
+    padding-top: 30px; 
     width: 350px;
     height: 450px;
-    flex-flow: column-reverse wrap-reverse; 
-    overflow: unset; 
+    flex-flow: column-reverse;  
   }
   .TrifleKit .price {
+    margin-top: 10px;
     font-size: 2rem;
     font-weight: bold;
     font-family: FreeMono, monospace;
@@ -14,4 +13,20 @@
   }  
   .TrifleKit img{
     width: 280px;
+  }
+  .glassStart{
+    width: 300px;
+    height: 30px;
+    background-color: aqua;
+  }
+  .glassMain{
+    width: 300px;
+    height: 350px;
+    border-right: solid aqua;
+    border-left: solid aqua;
+  }
+  .glassEnd{
+    width: 300px;
+    height: 50px;
+    background-color: aqua;
   }

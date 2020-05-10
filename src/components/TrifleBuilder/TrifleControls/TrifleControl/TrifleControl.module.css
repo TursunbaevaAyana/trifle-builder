@@ -15,7 +15,7 @@
   color: #B22222; 
   font-weight: bold;
   border-radius: 100%;
-  cursor: pointer;
+  cursor: pointer; 
 }
 .TrifleControl button:disabled {
   opacity: .5;
