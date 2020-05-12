@@ -4,6 +4,7 @@ import React, { useState } from "react";
   import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
   import Modal from "../../components/UI/Modal/Modal";
   import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
+  import axios from "../../axios"
   
   const PRICES = { 
     banana: 2,
@@ -49,7 +50,23 @@ import React, { useState } from "react";
     }
   
     function finishOrder() {
-      alert("You are on the checkout page!");
+     const order = {
+       ingredients: ingredients,
+       price: price,
+       delivery: 'Fast',
+       customer: {
+         name: "Bakyt",
+         phone: "0556378797",
+         address: {
+           street: "245 Gebze",
+           city: "Karakol",
+         },
+       },
+     };
+
+
+
+      axios.post("/orders.json", order).then((response) => console.log(response));
     }
   
     function addIngredient(type) {
