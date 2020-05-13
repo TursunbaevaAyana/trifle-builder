@@ -4,7 +4,7 @@ import React, { useState } from "react";
   import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
   import Modal from "../../components/UI/Modal/Modal";
   import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
-  import axios from "../../axios"
+  import axios from "../../axios";
   
   const PRICES = { 
     banana: 2,
@@ -33,7 +33,9 @@ import React, { useState } from "react";
     const [price, setPrice] = useState(50);
     const [canOrder, setCanOrder] = useState(false);
     const [isOrdering, setIsOrdering] = useState(false);
-  
+    const [loading, setLoading] = useState(false);
+
+
     function checkCanOrder(ingredients) {
       const total = Object.keys(ingredients).reduce((total, ingredient) => {
         return total + ingredients[ingredient];
@@ -64,9 +66,11 @@ import React, { useState } from "react";
        },
      };
 
-
-
-      axios.post("/orders.json", order).then((response) => console.log(response));
+      setLoading(true);
+      axios.post("/orders.json", order).then((response) =>  {
+        setLoading(false);
+        setIsOrdering(false);
+      });
     }
   
     function addIngredient(type) {
@@ -91,6 +95,19 @@ import React, { useState } from "react";
       }
     }
   
+    let orderSummary = "Loading...";
+    if (!loading) {
+      orderSummary = (
+        <OrderSummary
+            ingredients={ingredients}
+            finishOrder={finishOrder}
+            cancelOrder={cancelOrder}
+            price={price}
+          />
+      );
+    }
+
+
     return (
       <div className={classes.TrifleBuilder}>
         <TrifleKit price={price} ingredients={ingredients} />
@@ -101,13 +118,8 @@ import React, { useState } from "react";
           addIngredient={addIngredient}
           removeIngredient={removeIngredient}
         />
-        <Modal show={isOrdering} hideCallback={cancelOrder}>
-          <OrderSummary
-            ingredients={ingredients}
-            finishOrder={finishOrder}
-            cancelOrder={cancelOrder}
-            price={price}
-          />
+        <Modal show={isOrdering} hideCallback={cancelOrder}> 
+          {orderSummary}
         </Modal>
       </div>
     );
