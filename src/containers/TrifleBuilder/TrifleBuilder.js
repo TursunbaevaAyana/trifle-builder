@@ -5,6 +5,7 @@ import React, { useState } from "react";
   import Modal from "../../components/UI/Modal/Modal";
   import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
   import axios from "../../axios";
+import Spinner from "../../components/UI/Spinner/Spinner";
   
   const PRICES = { 
     banana: 2,
@@ -95,7 +96,7 @@ import React, { useState } from "react";
       }
     }
   
-    let orderSummary = "Loading...";
+    let orderSummary = <Spinner />;
     if (!loading) {
       orderSummary = (
         <OrderSummary
