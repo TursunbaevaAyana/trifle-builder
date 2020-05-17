@@ -9,15 +9,15 @@ import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
   
   const PRICES = { 
-    banana: 2,
-    biscuit: 10,
-    redVelvet: 15,
-    chocolateBiscuit: 12,
-    strawberry: 3,
-    iceCream: 7,
-    kiwi: 2,
-    strawberryJam: 5,
-    blueberries: 4,
+    banana: 2.1,
+    biscuit: 10.4,
+    redVelvet: 14.9,
+    chocolateBiscuit: 12.7,
+    strawberry: 3.2,
+    iceCream: 7.6,
+    kiwi: 2.3,
+    strawberryJam: 5.9,
+    blueberries: 4.9,
   };
   
   export default withErrorHandler(() => {
@@ -99,7 +99,7 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
     }
   
     let orderSummary = <Spinner />;
-    if (!loading) {
+    if (isOrdering && !loading) {
       orderSummary = (
         <OrderSummary
             ingredients={ingredients}
