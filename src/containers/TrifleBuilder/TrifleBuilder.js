@@ -6,6 +6,7 @@ import React, { useState } from "react";
   import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
   import axios from "../../axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
+import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
   
   const PRICES = { 
     banana: 2,
@@ -19,7 +20,7 @@ import Spinner from "../../components/UI/Spinner/Spinner";
     blueberries: 4,
   };
   
-  export default () => {
+  export default withErrorHandler(() => {
     const [ingredients, setIngredients] = useState({
       banana: 0,
       biscuit: 0,
@@ -31,6 +32,7 @@ import Spinner from "../../components/UI/Spinner/Spinner";
       strawberryJam: 0,
       blueberries: 0,
     });
+
     const [price, setPrice] = useState(50);
     const [canOrder, setCanOrder] = useState(false);
     const [isOrdering, setIsOrdering] = useState(false);
@@ -124,4 +126,4 @@ import Spinner from "../../components/UI/Spinner/Spinner";
         </Modal>
       </div>
     );
-  };
+  }, axios);
