@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-  import TrifleKit from "../../components/TrifleBuilder/TrifleKit/TrifleKit";
-  import classes from "./TrifleBuilder.module.css";
-  import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
-  import Modal from "../../components/UI/Modal/Modal";
-  import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
-  import axios from "../../axios";
+import React, { useState, useEffect } from "react";  import TrifleKit from "../../components/TrifleBuilder/TrifleKit/TrifleKit";
+ import classes from "./TrifleBuilder.module.css";
+import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
+import Modal from "../../components/UI/Modal/Modal";
+import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
+import axios from "../../axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
   
@@ -120,7 +119,6 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
           />
       );
     }
-
 
     return (
       <div className={classes.TrifleBuilder}>
