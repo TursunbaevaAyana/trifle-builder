@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
   import TrifleKit from "../../components/TrifleBuilder/TrifleKit/TrifleKit";
   import classes from "./TrifleBuilder.module.css";
   import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
@@ -21,17 +21,7 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
   };
   
   export default withErrorHandler(() => {
-    const [ingredients, setIngredients] = useState({
-      banana: 0,
-      biscuit: 0,
-      redVelvet: 0,
-      chocolateBiscuit: 0,
-      strawberry: 0,
-      iceCream: 0,
-      kiwi: 0,
-      strawberryJam: 0,
-      blueberries: 0,
-    });
+    const [ingredients, setIngredients] = useState(null);
 
     const [price, setPrice] = useState(50);
     const [canOrder, setCanOrder] = useState(false);
@@ -97,6 +87,27 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
         setPrice(newPrice);
       }
     }
+
+    useEffect(() =>{
+      axios.get("/ingredients.json")
+      .then(response => setIngredients(response.data));
+    }, []);
+
+    let output = <Spinner />;
+    if (ingredients){
+      output = (
+        <>
+         <TrifleKit price={price} ingredients={ingredients} />
+         <TrifleControls
+          startOrder={startOrder}
+          canOrder={canOrder}
+          ingredients={ingredients}
+          addIngredient={addIngredient}
+          removeIngredient={removeIngredient}
+         />
+        </>
+      );
+    }
   
     let orderSummary = <Spinner />;
     if (isOrdering && !loading) {
@@ -113,14 +124,7 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 
     return (
       <div className={classes.TrifleBuilder}>
-        <TrifleKit price={price} ingredients={ingredients} />
-        <TrifleControls
-          startOrder={startOrder}
-          canOrder={canOrder}
-          ingredients={ingredients}
-          addIngredient={addIngredient}
-          removeIngredient={removeIngredient}
-        />
+       {output}
         <Modal show={isOrdering} hideCallback={cancelOrder}> 
           {orderSummary}
         </Modal>
