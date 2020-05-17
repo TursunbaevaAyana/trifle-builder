@@ -1,15 +1,22 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import TrifleKit from "../../TrifleBuilder/TrifleKit/TrifleKit";
 import Button from "../../UI/Button/Button";
 import classes from "./CheckoutSummary.module.css";
 
+export default ({ price, ingredients, checkoutCancel, checkoutContinue }) => {
+  return (
+    <div className={classes.CheckoutSummary}>
+      <TrifleKit price={price} ingredients={ingredients} />
 
-export default ({ price, ingredients }) => {
-    return(
-      <div className={classes.CheckoutSummary}>
-        <TrifleKit ingredients={ingredients} price={price}/>
-        <Button green>Continue</Button>
-        <Button green>Cancel</Button>
-      </div>
-    );
-}
+      <Route path="/checkout" exact>
+        <Button click={checkoutCancel} red>
+          Cancel
+        </Button>
+        <Button click={checkoutContinue} green>
+          Continue
+        </Button>
+      </Route>
+    </div>
+  );
+};
