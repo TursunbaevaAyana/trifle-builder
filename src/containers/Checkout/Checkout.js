@@ -13,7 +13,7 @@ export default withErrorHandler(() => {
   const [ingredients, setIngredients] = useState({});
   const [price, setPrice] = useState(0);
   const [loading, setLoading] = useState(false);
--
+
   useEffect(() => {
     const query = new URLSearchParams(location.search);
     const newIngredients = {};
