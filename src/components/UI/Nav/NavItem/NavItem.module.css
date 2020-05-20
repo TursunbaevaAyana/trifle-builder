@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;
   padding: 1rem;
-  height: 50px;
+  height: 30px;
 
-  font-family: "Nanum Brush Script", cursive;
+  font-family:  FreeMono, monospace;
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-left: 5px solid transparent;
 
   transition: all 0.2s ease-in-out;
