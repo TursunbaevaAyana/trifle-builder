@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "../../axios";
 import TrifleKit from "../../components/TrifleBuilder/TrifleKit/TrifleKit";
-import TrifleControls from "../../components/TrifleBuilder/TrifleControls/TrifleControls";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSummary";
 import Spinner from "../../components/UI/Spinner/Spinner";
