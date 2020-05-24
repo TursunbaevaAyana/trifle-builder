@@ -1,8 +1,8 @@
 import * as actions from "./actions";
 
 const initialState = {
-    ingredients: nukl,
-    price: 100,
+    ingredients: null,
+    price: 50,
 };
 
 export default (state = initialState, action) => {
