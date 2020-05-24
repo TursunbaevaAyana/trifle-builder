@@ -10,21 +10,8 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import classes from "./TrifleBuilder.module.css";
 import { useSelector } from "react-redux";
 
-const PRICES = {
-  banana: 2,
-  biscuit: 10,
-  redVelvet: 14,
-  chocolateBiscuit: 12,
-  strawberry: 3,
-  iceCream: 7,
-  kiwi: 3,
-  strawberryJam: 5,
-  blueberries: 4,
-};
-
 export default withErrorHandler(() => {
-  const { ingredients } = useSelector((state) => state);
-  const [price, setPrice] = useState(100);
+  const { ingredients, price } = useSelector((state) => state);
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
   const history = useHistory();
@@ -62,31 +49,32 @@ export default withErrorHandler(() => {
   function addIngredient(type) {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
-    setIngredients(newIngredients);
+    //setIngredients(newIngredients);
     checkCanOrder(newIngredients);
 
-    const newPrice = price + PRICES[type];
-    setPrice(newPrice);
+   // const newPrice = price + PRICES[type];
+   //setPrice(newPrice);
   }
 
   function removeIngredient(type) {
     if (ingredients[type] >= 1) {
       const newIngredients = { ...ingredients };
       newIngredients[type]--;
-      setIngredients(newIngredients);
+     // setIngredients(newIngredients);
       checkCanOrder(newIngredients);
 
-      const newPrice = price - PRICES[type];
-      setPrice(newPrice);
+      //const newPrice = price - PRICES[type];
+      //setPrice(newPrice);
     }
   }
 
-  useEffect(() => {
+ /* useEffect(() => {
     axios
       .get("/ingredients.json")
       .then((response) => setIngredients(response.data))
       .catch((error) => {});
   }, []);
+  */
 
   let output = <Spinner />;
   if (ingredients) {

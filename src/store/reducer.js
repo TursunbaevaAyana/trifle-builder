@@ -15,6 +15,18 @@ const initialState = {
     price: 50,
 };
 
+const PRICES = {
+    banana: 2,
+    biscuit: 10,
+    redVelvet: 14,
+    chocolateBiscuit: 12,
+    strawberry: 3,
+    iceCream: 7,
+    kiwi: 3,
+    strawberryJam: 5,
+    blueberries: 4,
+  };
+
 export default (state = initialState, action) => {
  switch (action.type) {
      case actions.ADD_INGREDIENT:
@@ -24,6 +36,7 @@ export default (state = initialState, action) => {
                 ...state.ingredients,
                 [action.ingredient]: state.ingredients[action.ingredient] + 1,
             },
+            price: state.price + PRICES[action.ingredient],
         };
          
      case actions.REMOVE_INGREDIENT:
@@ -33,6 +46,7 @@ export default (state = initialState, action) => {
                 ...state.ingredients,
                 [action.ingredient]: state.ingredients[action.ingredient] - 1,
             },
+            price: state.price - PRICES[action.ingredient],
         };
 
      default:
