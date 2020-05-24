@@ -2,15 +2,15 @@ import * as actions from "./actions";
 
 const initialState = {
     ingredients: {
-      banana: 1,
-      biscuit: 1,
-      redVelvet: 1,
-      chocolateBiscuit: 1,
-      strawberry: 1,
-      iceCream: 1,
-      kiwi: 1,
-      strawberryJam: 1,
-      blueberries: 1,
+      banana: 0,
+      biscuit: 0,
+      redVelvet: 0,
+      chocolateBiscuit: 0,
+      strawberry: 0,
+      iceCream: 0,
+      kiwi: 0,
+      strawberryJam: 0,
+      blueberries: 0,
     },
     price: 50,
 };

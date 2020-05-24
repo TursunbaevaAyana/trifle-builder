@@ -7,9 +7,7 @@ const CONTROLS = {
     redVelvet :  "Red-Velvet", 
     chocolateBiscuit : "Chocolate Biscuit", 
     strawberry : "Strawberry", 
-    strawberryJam: "Strawberry Jam",
     iceCream : "Ice-Cream",
-    kiwi : "Kiwi", 
     blueberries : "Blueberries",
 };
 

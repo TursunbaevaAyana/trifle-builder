@@ -8,9 +8,7 @@ const LABELS = {
     redVelvet :  "Red-Velvet", 
     chocolateBiscuit : "Chocolate Biscuit", 
     strawberry : "Strawberry", 
-    strawberryJam: "Strawberry Jam",
     iceCream : "Ice-Cream",
-    kiwi : "Kiwi", 
     blueberries : "Blueberries",
      
 };
@@ -27,7 +25,7 @@ export default ({ ingredients, cancelOrder, finishOrder, price }) => {
   return (
     <div className={classes.OrderSummary}>
       <h2>Your order</h2>
-      <p>Congratulations! You've built a best trifle-kit of all times!</p>
+      <p>Congratulations! You've built a best "Trifle" of all times!</p>
       <ul>{ingredientsOutput}</ul>
       <p>Total price: {price.toFixed(2)} som</p>
       <p>Would you like to checkout?</p>
