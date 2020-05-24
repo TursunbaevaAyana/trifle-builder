@@ -1,7 +1,7 @@
 .Button {
     border: none;
     background-color: white;
-    color: gold;
+    color: #8B0000;
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;  
@@ -21,5 +21,5 @@
   }
   .orange {
     background-color: #8B0000;
-    color: white;
+    color: green;
   }
