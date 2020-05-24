@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "../../axios";
 import TrifleKit from "../../components/TrifleBuilder/TrifleKit/TrifleKit";
@@ -12,63 +12,15 @@ import { useSelector } from "react-redux";
 
 export default withErrorHandler(() => {
   const { ingredients, price } = useSelector((state) => state);
-  const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
   const history = useHistory();
 
-  function checkCanOrder(ingredients) {
-    const total = Object.keys(ingredients).reduce((total, ingredient) => {
-      return total + ingredients[ingredient];
-    }, 0);
-    setCanOrder(total > 0);
-  }
+  const canOrder = Object.values(ingredients).reduce((canOrder, number) => {
+    return !canOrder ? number > 0 : canOrder;
+  }, false);
 
-  function startOrder() {
-    setIsOrdering(true);
-  }
-
-  function cancelOrder() {
-    setIsOrdering(false);
-  }
-
-  function finishOrder() {
-    const queryParams = Object.keys(ingredients).map(
-      (ingredient) =>
-        encodeURIComponent(ingredient) +
-        "=" +
-        encodeURIComponent(ingredients[ingredient])
-    );
-    queryParams.push("price=" + encodeURIComponent(price.toFixed(2)));
-
-    history.push({
-      pathname: "/checkout",
-      search: queryParams.join("&"),
-    });
-  }
-
-  function addIngredient(type) {
-    const newIngredients = { ...ingredients };
-    newIngredients[type]++;
-    //setIngredients(newIngredients);
-    checkCanOrder(newIngredients);
-
-   // const newPrice = price + PRICES[type];
-   //setPrice(newPrice);
-  }
-
-  function removeIngredient(type) {
-    if (ingredients[type] >= 1) {
-      const newIngredients = { ...ingredients };
-      newIngredients[type]--;
-     // setIngredients(newIngredients);
-      checkCanOrder(newIngredients);
-
-      //const newPrice = price - PRICES[type];
-      //setPrice(newPrice);
-    }
-  }
-
- /* useEffect(() => {
+  /*
+  useEffect(() => {
     axios
       .get("/ingredients.json")
       .then((response) => setIngredients(response.data))
@@ -82,11 +34,9 @@ export default withErrorHandler(() => {
       <>
         <TrifleKit price={price} ingredients={ingredients} />
         <TrifleControls
-          startOrder={startOrder}
+          startOrder={() => setIsOrdering(true)}
           canOrder={canOrder}
           ingredients={ingredients}
-          addIngredient={addIngredient}
-          removeIngredient={removeIngredient}
         />
       </>
     );
@@ -97,18 +47,18 @@ export default withErrorHandler(() => {
     orderSummary = (
       <OrderSummary
         ingredients={ingredients}
-        finishOrder={finishOrder}
-        cancelOrder={cancelOrder}
+        finishOrder={() => history.push("/checkout")}
+        cancelOrder={() => setIsOrdering(false)}
         price={price}
       />
     );
   }
 
   return (
-    <div className={classes.TrifleBuilder}>
+    <div className={classes.SushiBuilder}>
       <h1>Trifle builder</h1>
       {output}
-      <Modal show={isOrdering} hideCallback={cancelOrder}>
+      <Modal show={isOrdering} hideCallback={() => setIsOrdering(false)}>
         {orderSummary}
       </Modal>
     </div>
