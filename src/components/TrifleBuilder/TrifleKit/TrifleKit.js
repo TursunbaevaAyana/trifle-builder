@@ -2,7 +2,6 @@ import React from "react";
 import Trifle from "./Trifle/Trifle";
 import classes from "./TrifleKit.module.css";
 
-
 export default ({ price, ingredients }) => {
   let ingredientsOutput = [];
 

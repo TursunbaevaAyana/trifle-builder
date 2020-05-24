@@ -25,7 +25,7 @@ export default ({ canOrder, ingredients, startOrder }) => {
   ));
 
   return (
-    <div className={classes.SushiControls}>
+    <div className={classes.TrifleControls}>
       {controlsOutput}
       <Button click={startOrder} enabled={canOrder}>
         Order
