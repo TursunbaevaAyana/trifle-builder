@@ -8,6 +8,7 @@ import OrderSummary from "../../components/TrifleBuilder/OrderSummary/OrderSumma
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import classes from "./TrifleBuilder.module.css";
+import { useSelector } from "react-redux";
 
 const PRICES = {
   banana: 2,
@@ -22,7 +23,7 @@ const PRICES = {
 };
 
 export default withErrorHandler(() => {
-  const [ingredients, setIngredients] = useState(null);
+  const { ingredients } = useSelector((state) => state);
   const [price, setPrice] = useState(100);
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
