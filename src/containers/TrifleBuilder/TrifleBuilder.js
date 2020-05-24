@@ -55,7 +55,7 @@ export default withErrorHandler(() => {
   }
 
   return (
-    <div className={classes.SushiBuilder}>
+    <div className={classes.TrifleBuilder}>
       <h1>Trifle builder</h1>
       {output}
       <Modal show={isOrdering} hideCallback={() => setIsOrdering(false)}>
