@@ -6,11 +6,11 @@ import Button from "../../UI/Button/Button";
 const CONTROLS = [
   { label: "Banana", type: "banana" },
   { label: "Biscuit", type: "biscuit" },
-  { label: "Red-Velvet", type: "redVelvet" },
   { label: "Chocolate Biscuit", type: "chocolateBiscuit" },
   { label: "Strawberry", type: "strawberry" },
   { label: "Ice-Cream", type: "iceCream" },
   { label: "Blueberries", type:  "blueberries" },
+  { label: "Red-Velvet", type: "redVelvet" },
 ];
 
 export default ({ canOrder, ingredients, startOrder }) => {
