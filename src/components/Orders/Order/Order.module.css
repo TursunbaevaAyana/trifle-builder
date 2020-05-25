@@ -13,12 +13,12 @@
   .Order .price {
     font-weight: bold;
     font-size: 2rem;
-    color: #ec6f31;
-    font-family: "Nanum Brush Script", cursive;
+    color: #8B0000;
+    font-family: FreeMono, monospace;
     margin-bottom: 0.5em;
   }
   .Order .ingredient {
-    border: 1px solid #fea77c;
+    border: 1px solid #8B0000;
     border-radius: 0.3em;
     padding: 0.3em;
     display: inline-block;
