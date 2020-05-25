@@ -1,12 +1,14 @@
 .Button {
     border: none;
     font-weight: bold;
+    color: #8B0000;
     border-radius: 20px;
     margin-right: 20px;
     cursor: pointer;  
     font-family: FreeMono, monospace; 
     font-size: 1.3rem;
     text-transform: uppercase; 
+    width: 120px;
   }
   .Button:disabled {
     opacity: .5;
