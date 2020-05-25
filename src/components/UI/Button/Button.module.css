@@ -1,14 +1,12 @@
 .Button {
     border: none;
-    background-color: white;
-    color: #8B0000;
     font-weight: bold;
     border-radius: 20px;
+    margin-right: 20px;
     cursor: pointer;  
     font-family: FreeMono, monospace; 
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    width: 110px;  
+    font-size: 1.3rem;
+    text-transform: uppercase; 
   }
   .Button:disabled {
     opacity: .5;
@@ -17,9 +15,10 @@
     opacity: .8;
   }
   .red{ 
-    color: black;
-  }
-  .orange {
+    color: white;
     background-color: #8B0000;
-    color: green;
+  }
+  .green {
+    background-color: green;
+    color: white;
   }
