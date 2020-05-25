@@ -1,8 +1,9 @@
 .Trifle { 
-  height: 20%;
+  height: 8%;
   width: 100%; 
   background-size: contain;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  margin-bottom: -10px; 
 } 
 .banana {
   background-image: url(../../../../assets/banana.png); 
@@ -13,12 +14,21 @@
 .iceCream {
   background-image: url(../../../../assets/iceCream.png);
 } 
-.chocolateBiscuit{
-  background-image: url(../../../../assets/chocolateBiscuit.png);
-}
-.biscuit{
-  background-image: url(../../../../assets/biscuit.png);
-}
 .blueberries{
   background-image: url(../../../../assets/blueberries.png);
+}
+.biscuit{
+  height: 50px;
+  width: 100%;
+  background-color: orangered;
+}
+.chocolateBiscuit{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(102, 32, 7);
+}
+.redVelvet{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(161, 9, 9);
 }
