@@ -12,11 +12,14 @@ const CONTROLS = {
 };
 
 export default ({ price, ingredients, details }) => {
-  const ingredientsOutput = Object.keys(ingredients).map((key) => (
-    <span key={key} className={classes.ingredient}>
-      {CONTROLS[key]} ({ingredients[key]})
-    </span>
-  ));
+  let ingredientsOutput = null;
+   if (ingredients) {
+      ingredientsOutput = Object.keys(ingredients).map((key) => (
+        <span key={key} className={classes.ingredient}>
+          {CONTROLS[key]} ({ingredients[key]})
+        </span>
+      ));
+   }
 
   const detailsOutput = (
     <div className={classes.details}>
@@ -29,7 +32,7 @@ export default ({ price, ingredients, details }) => {
   return (
     <div className={classes.Order}>
       {detailsOutput}
-      <div className={classes.price}>{price.toFixed(2)} som</div>
+      <div className={classes.price}>{price ? price.toFixed(2) : 0} som</div>
       <div className={classes.ingredients}>{ingredientsOutput}</div>
     </div>
   );
