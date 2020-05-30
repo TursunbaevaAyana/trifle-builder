@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import axios from "../../axios";
-import Order from "../../components/Orders/Order/Order";
+import Order from "./Order/Order";
 import classes from "./Orders.module.css";
-import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
-import Spinner from "../../components/UI/Spinner/Spinner";
+import withAxios from "../../hoc/withAxios/withAxios";
+import Spinner from "../UI/Spinner/Spinner";
+import { load } from "../../store/actions/orders";
+import { useDispatch, useSelector } from "react-redux";
 
-export default withErrorHandler(() => {
-  const [orders, setOrders] = useState(null);
+export default withAxios(() => {
+  const dispatch = useDispatch();
+  const { orders } = useSelector(state => state.orders);
 
   useEffect(() => {
-    axios
-      .get("/orders.json")
-      .then((response) => {
-        setOrders(response.data);
-      })
-      .catch((error) => {});
-  }, []);
+    load(dispatch);
+  }, [dispatch]);
 
   let ordersOutput = <Spinner />;
-  if (orders !== null) {
-    console.log(orders);
+  if (orders) {
     ordersOutput = Object.keys(orders).map((id) => (
       <Order key={id} {...orders[id]} />
     ));
+  }
+  if (orders === null) {
+    ordersOutput = <h3>No orders found</h3>;
   }
 
   return (
