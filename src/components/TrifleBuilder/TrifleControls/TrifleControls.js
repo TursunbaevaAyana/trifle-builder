@@ -3,22 +3,13 @@ import classes from "./TrifleControls.module.css";
 import TrifleControl from "./TrifleControl/TrifleControl"; 
 import Button from "../../UI/Button/Button";
 
-const CONTROLS = [
-  { label: "Banana", type: "banana" },
-  { label: "Biscuit", type: "biscuit" },
-  { label: "Chocolate Biscuit", type: "chocolateBiscuit" },
-  { label: "Strawberry", type: "strawberry" },
-  { label: "Ice-Cream", type: "iceCream" },
-  { label: "Blueberries", type:  "blueberries" },
-  { label: "Red-Velvet", type: "redVelvet" },
-];
-
 export default ({ canOrder, ingredients, startOrder }) => {
-  const controlsOutput = CONTROLS.map((control) => (
+  const controlsOutput = Object.keys(ingredients).map((ingredient) => (
     <TrifleControl
-      key={control.type}
-      control={control}
-      disabled={ingredients[control.type] === 0}
+      key={ingredient}
+      ingredient={ingredient}
+      label={ingredients[ingredient].label}
+      disabled={ingredients[ingredient].quantity === 0}
     />
   ));
 
