@@ -1,13 +1,14 @@
 .NavItem a {
   display: flex;
+  align-items: center;
   padding: 1rem;
   height: 50px;
 
   font-family: FreeMono, monospace; 
   text-decoration: none;
   color: white;
-  font-size: 1.1rem;
-  border-right: 5px solid transparent;
+  font-size: 1.2rem;
+  border-left: 5px solid transparent;
 
   transition: all 0.2s ease-in-out;
 }
@@ -24,6 +25,6 @@
   .NavItem a {
     height: 70px;
     border: none;
-    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
   }
 }
