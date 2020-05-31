@@ -1,8 +1,9 @@
 .Toolbar {
   display: flex;
   justify-content: space-between;
+
   background-color: #8B0000;
-} 
+}
 
 .Toolbar nav {
   display: none;
@@ -11,4 +12,4 @@
   .Toolbar nav {
     display: block;
   }
-}
+};
