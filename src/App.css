@@ -1,4 +1,5 @@
-  * {
+  
+* {
   box-sizing: border-box;
 }
 body {
@@ -6,10 +7,18 @@ body {
   padding: 0;
 }
 h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h1, h2, h3 {
   color: #8B0000;
   font-family: FreeMono, monospace;
   width: 100%;
   text-align: center;
-  font-size: 3rem;
   margin-top: 0;
 }
