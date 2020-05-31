@@ -1,10 +1,10 @@
 import React from "react";
 import { useHistory, Route, Redirect } from "react-router-dom";
-import axios from "../../../axios";
+import axios from "../../axios";
 import CheckoutSummary from "./CheckoutSummary/CheckoutSummary";
 import classes from "./Checkout.module.css";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
-import withAxios from "../../../hoc/withAxios/withAxios";
+import withAxios from "../../hoc/withAxios/withAxios";
 import Spinner from "../UI/Spinner/Spinner";
 import { useSelector } from "react-redux";
 
