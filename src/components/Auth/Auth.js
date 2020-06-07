@@ -32,6 +32,11 @@ export default withAxios(() => {
     );
   }
 
+  let errorOutput = null;
+  if (error) {
+    errorOutput = <h4 className={classes.error}>{error.message}</h4>
+  }
+
   return (
     <div className={classes.Auth}>
       {formOutput}
