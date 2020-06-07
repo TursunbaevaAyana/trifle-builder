@@ -14,6 +14,6 @@ export const fail = (dispatch, errors) => dispatch({
 });
 
 export const auth = (dispatch, email, password) => axios
-  .post("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCrbFZwYZA20UbJRbWyM4rA25uOO-u3zXA", { email, password })
+  .post("https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=", { email, password })
   .then(({ data }) => success(dispatch, data))
   .catch(error => fail(dispatch, error));
