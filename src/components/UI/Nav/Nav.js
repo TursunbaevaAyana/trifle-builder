@@ -6,5 +6,6 @@ export default () => (
   <ul className={classes.Nav}>
     <NavItem url="/builder">Trifle Builder</NavItem>
     <NavItem url="/orders">Orders</NavItem>
+    <NavItem url="/auth">Authanticate</NavItem>
   </ul>
 );

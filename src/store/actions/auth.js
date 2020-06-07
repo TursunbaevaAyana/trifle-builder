@@ -17,6 +17,6 @@ const key = "AIzaSyCSdxi9dcNkNzF7oOjNTzTAqXAkP3g0DJo";
 const signInUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" + key;
 const signUpUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + key ;
 export const auth = (dispatch, method, email, password) => axios
-  .post(method === "signin" ? signInUrl : signUpUrl, { email, password })
+  .post(method === "signin" ? signInUrl : signUpUrl, { email, password, returnSecureToke: true })
   .then(({ data }) => success(dispatch, data))
   .catch(error => fail(dispatch, error));
