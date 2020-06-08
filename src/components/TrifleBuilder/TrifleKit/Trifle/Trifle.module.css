@@ -1,12 +1,12 @@
 .Trifle { 
-  height: 8%;
+  height: 16%;
   width: 100%; 
   background-size: contain;
   background-repeat: no-repeat;
-  margin-bottom: -10px; 
+  margin-bottom: -35px; 
 } 
 .banana {
-  background-image: url(../../../../assets/banana.png); 
+  background-image: url(../../../../assets/banana.png);
 }  
 .strawberry {
   background-image: url(../../../../assets/strawberry.png);
@@ -18,11 +18,14 @@
   background-image: url(../../../../assets/blueberries.png);
 }
 .biscuit{
-  background-image: url(../../../../assets/biscuit.png);
+  background-image: url(../../../../assets/biscuit.jpg);
+  margin-bottom: -6px;
 }
 .chocolateBiscuit{
   background-image: url(../../../../assets/chocolateBiscuit.jpg);
+  margin-bottom: -6px;
 }
 .redVelvet{
   background-image: url(../../../../assets/redVelvet.jpg);
+  margin-bottom: -6px;
 }
