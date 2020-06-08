@@ -18,17 +18,11 @@
   background-image: url(../../../../assets/blueberries.png);
 }
 .biscuit{
-  height: 50px;
-  width: 100%;
-  background-color: orangered;
+  background-image: url(../../../../assets/biscuit.png);
 }
 .chocolateBiscuit{
-  height: 50px;
-  width: 100%;
-  background-color: rgb(102, 32, 7);
+  background-image: url(../../../../assets/chocolateBiscuit.jpg);
 }
 .redVelvet{
-  height: 50px;
-  width: 100%;
-  background-color: rgb(161, 9, 9);
+  background-image: url(../../../../assets/redVelvet.jpg);
 }
