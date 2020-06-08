@@ -3,13 +3,12 @@
   align-items: center;
 }
 .Logo img {
-  margin: 5px;
-  height: 58px;
-  width: 40px;
+  margin: 10px;
+  height: 55px;
+  width: 38px;
 }
-.Logo span { 
+.Logo span {
   font-family: FreeMono, monospace;
   color: white;
-  font-size: 1.5rem;
-  margin-top: -20px;
+  font-size: 1.6rem;
 }
