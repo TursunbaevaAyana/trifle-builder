@@ -5,27 +5,3 @@
   background-repeat: no-repeat;
   margin-bottom: -35px; 
 } 
-.banana {
-  background-image: url(../../../../assets/banana.png);
-}  
-.strawberry {
-  background-image: url(../../../../assets/strawberry.png);
-} 
-.iceCream {
-  background-image: url(../../../../assets/iceCream.png);
-} 
-.blueberries{
-  background-image: url(../../../../assets/blueberries.png);
-}
-.biscuit{
-  background-image: url(../../../../assets/biscuit.jpg);
-  margin-bottom: -6px;
-}
-.chocolateBiscuit{
-  background-image: url(../../../../assets/chocolateBiscuit.jpg);
-  margin-bottom: -6px;
-}
-.redVelvet{
-  background-image: url(../../../../assets/redVelvet.jpg);
-  margin-bottom: -6px;
-}
