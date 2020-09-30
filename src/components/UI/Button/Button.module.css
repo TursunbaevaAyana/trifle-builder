@@ -1,9 +1,7 @@
 .Button {
     border: none;
     font-weight: bold;
-    color: #8B0000;
     border-radius: 20px;
-    margin-right: 20px;
     cursor: pointer;  
     font-family: FreeMono, monospace; 
     font-size: 1.3rem;
@@ -18,9 +16,9 @@
   }
   .red{ 
     color: white;
-    background-color: #8B0000;
+    background-color:  rgb(250, 230, 152);
   }
   .green {
-    background-color: green;
+    background-color: rgb(250, 174, 186);
     color: white;
   }
