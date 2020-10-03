@@ -1,6 +1,8 @@
 .Button {
     border: none;
     font-weight: bold;
+    background-color:  rgb(250, 174, 186);
+    color: white;
     border-radius: 20px;
     cursor: pointer;  
     font-family: FreeMono, monospace; 

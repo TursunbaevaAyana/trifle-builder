@@ -1,8 +1,8 @@
 .TrifleControls {
-    border: 3px solid #B22222;
-    background-color: #8B0000;
-    height: 310px;
-    padding-left: .5rem; 
+    border: 3px solid rgb(248, 226, 135);
+    border-radius: 10px;
+    background-color: rgb(250, 230, 152);
+    height: 100%;
     margin-top: 30px;
     display: flex;
     flex-flow: column nowrap;

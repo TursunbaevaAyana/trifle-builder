@@ -14,9 +14,6 @@ export default ({ price, ingredients }) => {
   return (
     <div className={classes.TrifleKit}>
       <div className={classes.bento}>
-        <div className={classes.glassStart}></div>
-        <div className={classes.glassMain}> {ingredientsOutput}</div>
-        <div className={classes.glassEnd}></div>
       </div>
       <div className={classes.price}> {price} som</div>
     </div>

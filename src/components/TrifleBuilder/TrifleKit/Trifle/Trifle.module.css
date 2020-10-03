@@ -1,7 +1,25 @@
 .Trifle { 
-  height: 16%;
-  width: 100%; 
-  background-size: contain;
+  width: 40px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-top: -20px;
+
   background-repeat: no-repeat;
-  margin-bottom: -35px; 
 } 
+.BerryTrifle {
+  background-image: url(../../../../assets/BerryTrifle.png);
+}
+.StrawberryTrifle {
+  background-image: url(../../../../assets/StrawberryTrifle.png);
+}
+.ChocolateTrifle {
+  background-image: url(../../../../assets/ChocolateTrifle.png);
+}
+
+@media (min-width: 900px) {
+  .Trifle {
+    width: 50px;
+    height: 62px;
+    margin-top: -24px;
+  }
+}
