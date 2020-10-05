@@ -6,7 +6,8 @@
 .CheckoutForm select {
   padding: 0.5em 1em;
   border: 0;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgb(250, 174, 186) inset;
   font-size: 1.2rem;
   min-width: 480px;
   margin-top: 0.5em;
@@ -14,7 +15,7 @@
 .CheckoutForm input:focus,
 .CheckoutForm select:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6) inset;
+  box-shadow: 0 0 5px rgb(250, 174, 186) inset;
 }
 .CheckoutForm button {
   margin: 1em 0;
