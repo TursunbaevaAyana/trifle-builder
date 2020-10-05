@@ -1,24 +1,24 @@
 .Drawer .content {
-    width: 260px;
-    height: 100%;
-    background-color: #8B0000;
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-    transition: transform .3s ease-out;
+  width: 260px;
+  height: 100%;
+  background-color: rgb(250, 230, 152);
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  transition: transform .3s ease-out;
+}
+
+.Open {
+  transform: translateX(0);
+}
+.Closed {
+  transform: translateX(-260px);
+}
+
+@media (min-width: 500px) {
+  .Drawer {
+    display: none;
   }
-  
-  .Open {
-    transform: translateX(0);
-  }
-  .Closed {
-    transform: translateX(-260px);
-  }
-  
-  @media (min-width: 500px) {
-    .Drawer {
-      display: none;
-    }
-  }
+}

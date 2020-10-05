@@ -1,8 +1,10 @@
 .TrifleKit .bento { 
     padding-top: 30px; 
     width: 350px;
-    height: 450px;
+    height: 250px;
     flex-flow: column-reverse;  
+    background-color: violet;
+    border-radius: 10px;
   }
   .TrifleKit .price {
     margin-top: 10px;
