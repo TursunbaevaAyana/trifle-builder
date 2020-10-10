@@ -6,20 +6,20 @@
 
   background-repeat: no-repeat;
 } 
-.BerryTrifle {
-  background-image: url(../../../../assets/BerryTrifle.png);
+.berryTrifle {
+  background-image: url(../../../../assets/berryTrifle.png);
 }
-.StrawberryTrifle {
-  background-image: url(../../../../assets/StrawberryTrifle.png);
+.strawberryTrifle {
+  background-image: url(../../../../assets/strawberryTrifle.png);
 }
-.ChocolateTrifle {
-  background-image: url(../../../../assets/ChocolateTrifle.png);
+.chocolateTrifle {
+  background-image: url(../../../../assets/chocolateTrifle.png);
 }
 
 @media (min-width: 900px) {
   .Trifle {
-    width: 50px;
-    height: 62px;
+    width: 100px;
+    height: 92px;
     margin-top: -24px;
   }
 }
