@@ -1,0 +1,25 @@
+.Trifle { 
+  width: 40px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-top: -20px;
+
+  background-repeat: no-repeat;
+} 
+.berryTrifle {
+  background-image: url(../../../../assets/berryTrifle.png);
+}
+.strawberryTrifle {
+  background-image: url(../../../../assets/strawberryTrifle.png);
+}
+.chocolateTrifle {
+  background-image: url(../../../../assets/chocolateTrifle.png);
+}
+
+@media (min-width: 900px) {
+  .Trifle {
+    width: 100px;
+    height: 92px;
+    margin-top: -24px;
+  }
+}
